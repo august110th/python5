@@ -16,7 +16,7 @@ for i in contacts_list:
 # result = [re.sub(pattern, substitution,i) for i in contacts_list]
 # print(result)
 
-# with open("phonebook.csv", "w", newline='') as f:
-#   datawriter = csv.writer(f, delimiter=',')
-#   # Вместо contacts_list подставьте свой список
-#   datawriter.writerows(contacts_list)
+with open("phonebook.csv", "w", newline='') as f:
+  datawriter = csv.writer(f, delimiter=',')
+  # Вместо contacts_list подставьте свой список
+  datawriter.writerows(contacts_list)
