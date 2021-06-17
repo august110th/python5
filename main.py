@@ -13,12 +13,9 @@ def new_phone(lines: str):
     new_phone = re.sub(pattern, substitution, lines)
     # print(new_phone)
 
-# for i in contacts_list:
-#   for v in i:
-#     result = re.sub(pattern, substitution, v)
-#     print(result)
-# # result = [re.sub(pattern, substitution,i) for i in contacts_list]
-# # print(result)
+new_contact_list = list()
+new_contact_list.append(contacts_list[0])
+print(new_contact_list)
 #
 # with open("phonebook.csv", "w", newline='') as f:
 #   datawriter = csv.writer(f, delimiter=',')
