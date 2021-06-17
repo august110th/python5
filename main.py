@@ -10,9 +10,8 @@ pattern = r'(\+7|8)\s*\(*(495)\)*\s*\-*(\d{3})\-*(\d{2})\-*(\d+)(\s*\(*(доб.)
 substitution = r'+7(\2)\3-\4-\5 \7\8'
 
 def new_phone(lines: str):
-    phone_number = pattern
-    new_phone = re.sub(phone_number, substitution, lines)
-    print(new_phone)
+    new_phone = re.sub(pattern, substitution, lines)
+    # print(new_phone)
 
 # for i in contacts_list:
 #   for v in i:
